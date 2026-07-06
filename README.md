@@ -1,8 +1,8 @@
-# ProofMarket WC
+# VeriKick ⚽️
 
 **Verifiable World Cup prediction markets with Merkle-proof settlement — built for the TxODDS World Cup Hackathon (Prediction Markets and Settlement track).**
 
-ProofMarket WC is a live odds board and prediction market for the 2026 World Cup. Markets stream from a TxLINE-shaped data feed, and every settled prediction ships a **Merkle settlement receipt** that anyone can re-verify in their browser — the exact trust model TxLINE's on-chain validation primitives enable, demonstrated end to end.
+VeriKick is a live odds board and prediction market for the 2026 World Cup. Markets stream from a TxLINE-shaped data feed, and every settled prediction ships a **Merkle settlement receipt** that anyone can re-verify in their browser — the exact trust model TxLINE's on-chain validation primitives enable, demonstrated end to end.
 
 > ⚠️ Demo build: all balances are simulated (`demo-USDC`). No real-money wagering.
 
