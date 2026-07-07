@@ -5,9 +5,9 @@
 ---
 
 ## 1. Introduction (0:00 - 0:45)
-- "Hi, I'm [Your Name], and this is **ProofMarket WC**, a verifiable prediction market for the World Cup built on the TxLINE data layer."
+- "Hi, I'm [Your Name], and this is **VeriKick**, a verifiable prediction market for the World Cup built on the TxLINE data layer."
 - **The Problem:** Most sports prediction platforms rely on trusted oracles or centralized APIs for settlement, creating a single point of failure and lack of transparency.
-- **The Solution:** ProofMarket WC uses TxLINE's cryptographically verifiable data to settle markets trustlessly using Merkle proofs.
+- **The Solution:** VeriKick uses TxLINE's cryptographically verifiable data to settle markets trustlessly using Merkle proofs.
 
 ## 2. Dashboard & Live Data (0:45 - 2:00)
 - "Here is the Odds Board. We are seeing a live stream of matches powered by a TxLINE-shaped feed."
@@ -29,5 +29,5 @@
 - "You can see the Merkle root, the signature, and the inclusion path. This ensures the match result is exactly what was recorded on the data layer, with no tampering possible."
 
 ## 5. Conclusion (4:30 - 5:00)
-- "By leveraging TxLINE's verifiable stat primitives, ProofMarket WC removes the need for centralized trust in sports settlement."
+- "By leveraging TxLINE's verifiable stat primitives, VeriKick removes the need for centralized trust in sports settlement."
 - "The code is fully open-source and ready to be connected to TxLINE's mainnet/devnet feed. Thanks for watching!"

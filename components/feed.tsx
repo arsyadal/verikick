@@ -10,6 +10,14 @@ export function useFeed() {
   const [drift, setDrift] = useState<Record<string, "up" | "down">>({});
 
   useEffect(() => {
+    // Initial fetch so we don't wait 5s for the first tick
+    fetch("/api/feed")
+      .then((res) => res.json())
+      .then((data) => {
+        setFixtures(data.fixtures);
+        setConnected(true);
+      });
+
     const es = new EventSource("/api/stream");
     es.onmessage = (ev) => {
       const data = JSON.parse(ev.data);

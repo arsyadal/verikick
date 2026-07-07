@@ -1,7 +1,7 @@
-# Technical Deep-Dive: ProofMarket WC
+# Technical Deep-Dive: VeriKick
 
 ## Data Layer & Simulation Logic
-Since the World Cup 2026 match schedule concludes before the hackathon judging period, ProofMarket WC implements a **Deterministic Match Simulation Engine** (`lib/engine.ts`).
+Since the World Cup 2026 match schedule concludes before the hackathon judging period, VeriKick implements a **Deterministic Match Simulation Engine** (`lib/engine.ts`).
 
 - **Seeded RNG**: Every match state is derived from a `(fixtureId, cycleNumber)` seed using the Mulberry32 algorithm.
 - **Pure Functions**: The `getMatchState` and `getFinalResult` functions are pure. Given a specific cycle and fixture, they will always return the same scores, events, and odds.

@@ -19,8 +19,8 @@ export interface Prediction {
   receiptRoot?: string;
 }
 
-const BAL_KEY = "pmwc_balance";
-const PRED_KEY = "pmwc_predictions";
+const BAL_KEY = "vk_balance";
+const PRED_KEY = "vk_predictions";
 export const STARTING_BALANCE = 1000;
 
 export function getBalance(): number {

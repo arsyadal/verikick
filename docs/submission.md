@@ -1,10 +1,10 @@
 # Submission Form Template
 
 ### Project Title
-ProofMarket WC
+VeriKick
 
 ### Briefly explain your Project
-ProofMarket WC is a verifiable prediction market for the World Cup that utilizes TxLINE's data layer to enable trustless settlement. The platform features a real-time odds board, dynamic markets for 1X2 and Total Goals, and a settlement engine that generates Merkle receipts for every match outcome. This allows users to verify their prediction results client-side without relying on a centralized oracle.
+VeriKick is a verifiable prediction market for the World Cup that utilizes TxLINE's data layer to enable trustless settlement. The platform features a real-time odds board, dynamic markets for 1X2 and Total Goals, and a settlement engine that generates Merkle receipts for every match outcome. This allows users to verify their prediction results client-side without relying on a centralized oracle.
 
 ### TxLINE API Experience: What did you like most, and where did you hit friction?
 **Liked most:** The consistent JSON schema across fixtures, odds, and scores made it incredibly easy to build a unified data layer. The inclusion of validation proofs (Merkle primitives) as a first-class citizen in the documentation was the highlight, as it allowed us to model our settlement engine directly on TxLINE's architectural vision for Web3 sports apps.

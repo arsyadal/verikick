@@ -73,8 +73,8 @@ export default function MarketPage({ params }: { params: Promise<{ id: string }>
       </section>
 
       <section>
-        <h2 className="display font-bold text-sm tracking-[0.25em] text-ink-dim mb-3">
-          {closed ? "MARKETS CLOSED — AWAITING SETTLEMENT" : "OPEN MARKETS"}
+        <h2 className="display font-bold text-sm tracking-[0.25em] text-ink-dim mb-3 uppercase">
+          {closed ? "Markets Closed — Match Finished" : "Open Markets"}
         </h2>
         <div className="grid sm:grid-cols-3 gap-2">
           {options.map((o) => {
@@ -84,9 +84,13 @@ export default function MarketPage({ params }: { params: Promise<{ id: string }>
               <button
                 key={o.sel}
                 disabled={closed}
-                onClick={() => setPicked({ sel: o.sel, label: o.label, odds: o.odds })}
-                className={`rounded-lg border p-4 text-left transition-colors disabled:opacity-40 disabled:cursor-not-allowed ${
-                  active ? "border-phosphor bg-phosphor/10" : "border-line bg-panel/70 hover:border-phosphor-dim"
+                type="button"
+                onClick={() => {
+                  console.log("Picking:", o.sel);
+                  setPicked({ sel: o.sel, label: o.label, odds: o.odds });
+                }}
+                className={`cursor-pointer rounded-lg border p-4 text-left transition-all active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed ${
+                  active ? "border-phosphor bg-phosphor/15 ring-1 ring-phosphor" : "border-line bg-panel/70 hover:border-phosphor-dim"
                 }`}
               >
                 <div className="text-xs text-ink-dim">{o.market}</div>

@@ -13,10 +13,10 @@ export default function Dashboard() {
     <div className="space-y-10">
       <section className="rise">
         <h1 className="display text-4xl sm:text-5xl font-extrabold leading-tight board-flicker">
-          THE ODDS BOARD<span className="text-phosphor">.</span>
+          VERI<span className="text-phosphor">KICK</span> THE ODDS BOARD<span className="text-phosphor">.</span>
         </h1>
         <p className="text-ink-dim mt-2 max-w-2xl text-sm">
-          World Cup prediction markets streaming from a TxLINE-shaped feed. Every settled market ships a
+          VeriKick is a World Cup prediction market dashboard powered by a TxLINE-shaped feed. Every settled market ships a
           Merkle receipt you can re-verify in the browser — no oracle trust required.
         </p>
         <p className="mt-3 text-xs">

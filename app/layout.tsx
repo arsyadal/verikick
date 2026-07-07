@@ -16,7 +16,7 @@ const mono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ProofMarket WC — Verifiable World Cup Prediction Markets",
+  title: "VeriKick — Verifiable World Cup Prediction Markets",
   description:
     "World Cup prediction markets with deterministic settlement and Merkle-verifiable receipts, powered by TxLINE data feeds.",
 };
@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="border-b border-line bg-panel/60 backdrop-blur sticky top-0 z-20">
           <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between gap-4">
             <Link href="/" className="display font-extrabold text-lg tracking-tight">
-              PROOF<span className="text-phosphor">MARKET</span>
+              VERI<span className="text-phosphor">KICK</span>
               <span className="text-ink-dim font-normal text-sm ml-2">WC·26</span>
             </Link>
             <nav className="flex items-center gap-5 text-sm">
