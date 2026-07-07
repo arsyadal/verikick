@@ -66,9 +66,9 @@ export default function Portfolio() {
           <p className="text-ink-dim text-sm mt-1">Demo balance and prediction history — settled trustlessly against feed receipts.</p>
         </div>
         <div className="text-right">
-          <div className="text-xs text-ink-dim">BALANCE</div>
+          <div className="text-xs text-ink-dim">WALLET BALANCE</div>
           <div className="text-3xl font-bold text-phosphor tabular-nums">{balance.toFixed(2)}</div>
-          <div className="text-[11px] text-ink-dim">demo-USDC</div>
+          <div className="text-[11px] text-ink-dim uppercase">USDC (Devnet)</div>
         </div>
       </section>
 

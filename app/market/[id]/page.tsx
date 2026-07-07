@@ -108,18 +108,18 @@ export default function MarketPage({ params }: { params: Promise<{ id: string }>
       {!closed && (
         <section className="rounded-xl border border-line bg-panel/70 p-6 max-w-md">
           <h3 className="display font-bold mb-3">Place prediction</h3>
-          <label className="block text-xs text-ink-dim mb-1">Stake (demo-USDC)</label>
+          <label className="block text-xs text-ink-dim mb-1">Stake (USDC Devnet)</label>
           <input
             type="number"
             min={1}
             value={stake}
             onChange={(e) => setStake(Number(e.target.value))}
-            className="w-full rounded border border-line bg-pitch px-3 py-2 tabular-nums focus:border-phosphor outline-none"
+            className="w-full rounded border border-line bg-pitch px-3 py-2 tabular-nums focus:border-phosphor outline-none text-ink"
           />
           {picked && (
             <p className="text-xs text-ink-dim mt-2">
               {picked.label} @ {picked.odds.toFixed(2)} → potential payout{" "}
-              <span className="text-phosphor font-semibold">{(stake * picked.odds).toFixed(2)}</span>
+              <span className="text-phosphor font-semibold">{(stake * picked.odds).toFixed(2)} USDC</span>
             </p>
           )}
           {error && <p className="text-xs text-danger mt-2">{error}</p>}
@@ -131,9 +131,9 @@ export default function MarketPage({ params }: { params: Promise<{ id: string }>
             <button
               onClick={submit}
               disabled={!picked}
-              className="mt-4 w-full rounded bg-phosphor text-pitch font-bold py-2 hover:bg-phosphor/85 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+              className="mt-4 w-full rounded bg-phosphor text-pitch font-bold py-2 hover:bg-phosphor/85 disabled:opacity-40 disabled:cursor-not-allowed transition-all transform active:scale-[0.98]"
             >
-              {picked ? `CONFIRM — ${picked.label}` : "PICK A MARKET"}
+              {picked ? `CONFIRM PREDICTION — ${picked.label}` : "PICK A MARKET"}
             </button>
           )}
         </section>

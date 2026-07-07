@@ -34,9 +34,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <nav className="flex items-center gap-5 text-sm">
               <Link href="/" className="hover:text-phosphor transition-colors">Markets</Link>
               <Link href="/portfolio" className="hover:text-phosphor transition-colors">Portfolio</Link>
-              <span className="hidden sm:inline-flex items-center gap-1.5 text-xs text-amber border border-amber/40 rounded-full px-2.5 py-1">
-                SIM FEED · TxLINE-shaped
-              </span>
+              <div className="hidden lg:flex flex-col items-end border-l border-line pl-5 ml-2">
+                <span className="text-[10px] text-ink-dim leading-none uppercase">Connected Wallet</span>
+                <span className="text-xs text-phosphor font-mono leading-tight">7k2y9b...sqT</span>
+              </div>
             </nav>
           </div>
         </header>
